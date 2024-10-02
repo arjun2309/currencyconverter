@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css">
+    <link rel="icon" type="image/x-icon" href="./img/Screenshot 2024-09-28 191657.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <p>Use this tool to convert currencies. Enter the amount, select the currencies, and click "Convert" to get the equivalent value.</p>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Amount" />
+            <select id="fromCurrency">
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="INR">INR - Indian Rupee</option>
+            </select>
+            <span>to</span>
+            <select id="toCurrency">
+                <option value="EUR">EUR - Euro</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="INR">INR - Indian Rupee</option>
+            </select>
+            <button id="convertButton">Convert</button>
+            <button id="swapButton">Swap</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <h2 id="result"></h2>
+
+        <div id="historicalData">
+            <h2>Recent Exchange Rates</h2>
+            <table id="rateTable">
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>USD</td><td>EUR</td><td>0.85</td></tr>
+                    <tr><td>GBP</td><td>USD</td><td>1.33</td></tr>
+                    <tr><td>EUR</td><td>JPY</td><td>130</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Disclaimer: Exchange rates are for informational purposes only and may not reflect live market rates.</p>
+        </footer>
+    </div>
+    <script src="currency .js"></script>
+</body>
+</html>
